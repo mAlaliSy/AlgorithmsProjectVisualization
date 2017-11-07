@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#fff"
+            android:elevation="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.malalisy.routingalgorithmvisualizer.visualization.VisualizationView
+                    android:id="@+id/visualizationView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/number_of_vertices" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/nOfVertices"
+                style="@style/NumberPickerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnSet"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/draw" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/choose_the_source" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/sourceNumber"
+                style="@style/NumberPickerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnFindMaxBW"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/find_max_bandwidth" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resultContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#fff"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:id="@+id/destinationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/choose_the_destination" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/destinationNumber"
+                style="@style/NumberPickerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnShowPath"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/show_path" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
