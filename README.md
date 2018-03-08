@@ -1,4 +1,4 @@
-# Design & Analysis of Algorithms Progjec | Visualization Part
+# Design & Analysis of Algorithms Project | Visualization Part
 
 To understand the problem please see the file "Project.pdf".
 
