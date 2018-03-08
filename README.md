@@ -2,7 +2,7 @@
 
 To understand the problem please see the file "Project.pdf".
 
-This is an Android application to visualize the results of the algorithm. 
+This is an Android application that visualizes the results of the algorithm. 
 See the video example: https://youtu.be/sCU35RPOZ_g
 
 Screenshots:
